@@ -1,0 +1,21 @@
+#	Debian 7 "wheezy"
+
+# Debian CDN mirror
+deb	http://cdn.debian.net/debian/ wheezy main contrib non-free
+deb-src	http://cdn.debian.net/debian/ wheezy main contrib non-free
+
+# Debian security updates
+deb	http://security.debian.org/ wheezy/updates main contrib non-free
+deb-src	http://security.debian.org/ wheezy/updates main contrib non-free
+
+# wheezy-updates, previously known as 'volatile'
+deb	http://cdn.debian.net/debian/ wheezy-updates main contrib non-free
+deb-src	http://cdn.debian.net/debian/ wheezy-updates main contrib non-free
+
+# wheezy-backports, previously on backports.debian.org
+deb	http://cdn.debian.net/debian/ wheezy-backports main contrib non-free
+deb-src	http://cdn.debian.net/debian/ wheezy-backports main contrib non-free
+
+# wheezy-backports-sloppy, previously on backports.debian.org
+deb	http://cdn.debian.net/debian/ wheezy-backports-sloppy main contrib non-free
+deb-src	http://cdn.debian.net/debian/ wheezy-backports-sloppy main contrib non-free

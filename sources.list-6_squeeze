@@ -1,0 +1,19 @@
+#	Debian 6 "squeeze"
+
+#	http://www.debian.org/distrib/archive
+# Debian archive mirrors for old releases
+deb	http://archive.debian.org/debian/ squeeze main contrib non-free
+deb-src	http://archive.debian.org/debian/ squeeze main contrib non-free
+
+# Debian security updates
+deb	http://security.debian.org/ squeeze/updates main contrib non-free
+deb-src	http://security.debian.org/ squeeze/updates main contrib non-free
+
+# apt-get install apt-transport-https
+# squeeze-backports, previously on backports.debian.org
+deb	https://backports.debian.org/debian-backports/ squeeze-backports  main contrib non-free
+deb-src	https://backports.debian.org/debian-backports/ squeeze-backports  main contrib non-free
+
+# squeeze-backports-sloppy, previously on backports.debian.org
+deb	https://backports.debian.org/debian-backports/ squeeze-backports-sloppy main contrib non-free
+deb-src	https://backports.debian.org/debian-backports/ squeeze-backports-sloppy main contrib non-free
