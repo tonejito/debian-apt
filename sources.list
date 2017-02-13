@@ -1,1 +1,3 @@
-# /etc/apt/sources.list
+#	/etc/apt/sources.list
+
+# apt-key adv --keyserver keyring.debian.org --recv-keys XXXXXXXXXXXXXXXX
