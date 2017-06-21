@@ -5,15 +5,36 @@
 deb	http://archive.debian.org/debian/ squeeze main contrib non-free
 deb-src	http://archive.debian.org/debian/ squeeze main contrib non-free
 
-# Debian security updates
-deb	http://security.debian.org/ squeeze/updates main contrib non-free
-deb-src	http://security.debian.org/ squeeze/updates main contrib non-free
+# Security and Backports are gone as of February 2016
+#	https://www.debian.org/releases/squeeze/
+#	https://wiki.debian.org/LTS
+#
+# Check Debian Snapshot and Debian archive repositories instead
+#	http://snapshot.debian.org/
+#	http://archive.debian.org/
+#	https://wiki.debian.org/DebianGeoMirror
 
-# apt-get install apt-transport-https
+## Debian security updates
+#deb		http://security.debian.org/ squeeze/updates main contrib non-free
+#deb-src	http://security.debian.org/ squeeze/updates main contrib non-free
+
+#	https://wiki.debian.org/Backports
+#	http://backports.debian.org/Instructions/
+#	https://backports.debian.org/news/squeeze-backports_and_lenny-backports-sloppy_started/
+
+# Old URLs for debian-backports
+## apt-get install apt-transport-https
+#deb		https://backports.debian.org/debian-backports/ squeeze-backports main contrib non-free
+#deb-src	https://backports.debian.org/debian-backports/ squeeze-backports main contrib non-free
+##deb		https://backports.debian.org/debian-backports/ squeeze-backports-sloppy main contrib non-free
+##deb-src	https://backports.debian.org/debian-backports/ squeeze-backports-sloppy main contrib non-free
+
+# New URLs for backports in the main debian archive
+#	https://bits.debian.org/2013/03/backports-integrated-into-the-main-archive.html
+
 # squeeze-backports, previously on backports.debian.org
-deb	https://backports.debian.org/debian-backports/ squeeze-backports  main contrib non-free
-deb-src	https://backports.debian.org/debian-backports/ squeeze-backports  main contrib non-free
-
-# squeeze-backports-sloppy, previously on backports.debian.org
-deb	https://backports.debian.org/debian-backports/ squeeze-backports-sloppy main contrib non-free
-deb-src	https://backports.debian.org/debian-backports/ squeeze-backports-sloppy main contrib non-free
+#deb		http://cdn.debian.net/debian/ squeeze-backports main contrib non-free
+#deb-src	http://cdn.debian.net/debian/ squeeze-backports main contrib non-free
+## squeeze-backports-sloppy, previously on backports.debian.org
+#deb		http://cdn.debian.net/debian/ squeeze-backports-sloppy main contrib non-free
+#deb-src	http://cdn.debian.net/debian/ squeeze-backports-sloppy main contrib non-free
