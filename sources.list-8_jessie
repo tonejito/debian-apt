@@ -1,5 +1,6 @@
 #	Debian 8 "jessie"
 
+# Main archive
 deb	http://httpredir.debian.org/debian/ jessie main contrib non-free
 deb-src	http://httpredir.debian.org/debian/ jessie main contrib non-free
 

@@ -1,4 +1,21 @@
 #	/etc/apt/sources.list
-# aptitude update
+
 # apt-key adv --keyserver keyring.debian.org --recv-keys XXXXXXXXXXXXXXXX
 # apt-key list | grep -i expired | cut -d / -f 2 | awk '{print $1}' | xargs -r -t apt-key adv --keyserver keys.gnupg.net --recv-keys
+# aptitude update
+
+For older releases
+
+# cat > /etc/apt/apt.conf.d/99-gpg-EXPIRED << EOF
+//	http://snapshot.debian.org/
+//
+//	/etc/apt/apt.conf.d/99-gpg-EXPIRED
+//
+// To access snapshots of suites using Valid-Until that are older than a dozen days, 
+// it is necessary to ignore the Valid-Until header within Release files, 
+// in order to prevent apt from disregarding snapshot entries ("Release file expired"). 
+// Use aptitude -o Acquire::Check-Valid-Until=false update or 
+// apt-get -o Acquire::Check-Valid-Until=false update for this purpose.
+
+Acquire::Check-Valid-Until false ;
+EOF
