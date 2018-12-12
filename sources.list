@@ -1,3 +1,4 @@
 #	/etc/apt/sources.list
 # aptitude update
 # apt-key adv --keyserver keyring.debian.org --recv-keys XXXXXXXXXXXXXXXX
+# apt-key list | grep -i expired | cut -d / -f 2 | awk '{print $1}' | xargs -r -t apt-key adv --keyserver keys.gnupg.net --recv-keys

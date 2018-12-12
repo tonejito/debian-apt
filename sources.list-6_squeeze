@@ -2,8 +2,10 @@
 
 #	http://www.debian.org/distrib/archive
 # Debian archive mirrors for old releases
-deb	http://archive.debian.org/debian/ squeeze main contrib non-free
-deb-src	http://archive.debian.org/debian/ squeeze main contrib non-free
+#deb	http://archive.debian.org/debian/ squeeze main contrib non-free
+#deb-src	http://archive.debian.org/debian/ squeeze main contrib non-free
+deb	http://archive.debian.org/debian/ squeeze-lts main contrib non-free
+deb-src	http://archive.debian.org/debian/ squeeze-lts main contrib non-free
 
 # Security and Backports are gone as of February 2016
 #	https://www.debian.org/releases/squeeze/
